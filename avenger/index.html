@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avengers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <center>
+        <img width="20%"  src="images/logo.svg" > <br>
+        <a data-fancybox="gallery" href="images/antman.jpg" data-caption="ant man"><img src="images/antman.jpg"></a>
+        <a data-fancybox="gallery" href="images/blackpanther.jpg" data-caption="black panther"><img src="images/blackpanther.jpg"></a>
+        <a data-fancybox="gallery" href="images/bucky.jpg" data-caption="white fox"><img src="images/bucky.jpg"></a>
+        <a data-fancybox="gallery" href="images/captian.jpg" data-caption="captina america"><img src="images/captian.jpg"></a>
+        <a data-fancybox="gallery" href="images/doctor.jpg" data-caption="doctor strange"><img src="images/doctor.jpg"></a>
+        <a data-fancybox="gallery" href="images/hulk.jpg" data-caption="hulk"><img src="images/hulk.jpg"></a>
+        <a data-fancybox="gallery" href="images/ironman.jpg" data-caption="iron man"><img src="images/ironman.jpg"></a>
+        <a data-fancybox="gallery" href="images/thor.jpg" data-caption="thor"><img src="images/thor.jpg"></a>
+        <a data-fancybox="gallery" href="images/vision.jpg" data-caption="vision"><img src="images/vision.jpg"></a>
+        <a data-fancybox="gallery" href="images/warmachine.jpg" data-caption="war machine"><img src="images/warmachine.jpg"></a>
+
+
+    </center>
+
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <script>
+        $('[data-fancybox]').fancybox({
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+            animationEffect: "zoom",
+            transitionEffect: "slide",
+            infobar: false,
+            caption: function (instance, item) {
+                var caption = $(this).data('caption') || '';
+
+                return (caption.length ? caption + '<br />' : '') + 'Image <span data-fancybox-index></span> of <span data-fancybox-count></span>';
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>

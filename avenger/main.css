@@ -1,0 +1,15 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+a img{
+    height:35%;
+    width:30%;
+}
+a{
+    text-decoration: none;
+    outline: none; 
+}
+.fancybox-caption{
+    font-family:sans-serif;
+}
